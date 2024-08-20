@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Mod That I Made So That I Can Learn MC Modding With Fabric But I Hope You Enjoy!",
+	"authors": [
+		"StrangerGamer"
+	],
+	"contact": {
+		"homepage": "https://YouTube.com/",
+		"sources": "https://github.com/StrangerGamer-A/Fabric-Tutorial-Mod-1.21.X"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.strangergamer.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"com.strangergamer.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"com.strangergamer.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
